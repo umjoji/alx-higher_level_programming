@@ -9,4 +9,3 @@ for i in range(len(sys.argv)):
         sum += num
 
 print(sum)
-

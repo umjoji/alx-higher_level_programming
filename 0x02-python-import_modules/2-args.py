@@ -10,7 +10,7 @@ elif num_of_args == 1:
     print("{}: {}".format(num_of_args, sys.argv[1]))
 else:
     print("{} arguments:".format(num_of_args))
-    # loop through the list and print 
+    # loop through the list and print
     for i in range(num_of_args + 1):
         if i != 0:
             print("{}: {}".format(i, sys.argv[i]))
