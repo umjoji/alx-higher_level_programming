@@ -20,7 +20,7 @@ int check_cycle(listint_t *list)
 	{
 		tortoise = tortoise->next;
 		hare = hare->next->next;
-		if (slow == fast)
+		if (tortoise == hare)
 			return (1);
 	}
 
