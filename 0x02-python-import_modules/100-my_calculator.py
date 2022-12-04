@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # create a dictionary to store operators
     # and function names
     operators = {"+": add, "-": sub, "*": mul, "/": div}
-    
+
     # print error msg if operator not in dict keys
     if sys.argv[2] not in list(operators.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
@@ -24,4 +24,5 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     # print formatted output
-    print("{} {} {} = {}".format(a, sys.argv[2], b, operators[sys.argv[2]](a, b)))
+    x = sys.argv[2]
+    print("{} {} {} = {}".format(a, x, b, operators[x](a, b)))
