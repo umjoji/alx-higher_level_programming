@@ -5,7 +5,8 @@ def uniq_add(my_list=[]):
     
     # Iterate over the list
     for i in my_list:
-        # Check if the current element is an integer and add it to the set
+        # Check if the current element is an integer 
+        # and add it to the set
         # if it is not already in the set
         if isinstance(i, int) and i not in unique_integers:
             unique_integers.add(i)
