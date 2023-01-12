@@ -34,20 +34,21 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
 
-       new = Node(value)
-       # for an empty list
-       if self.__head is None:
+        new = Node(value)
+        # for an empty list
+        if self.__head is None:
             new.next_node = None
             self.__head = new   # head node is now new node
         # for a non-empty list with value less than data
-       elif self.__head.data > value:
+        elif self.__head.data > value:
             new.next_node = self.__head
             self.__head = new
-       else:
+        else:
             # for a non-empty node with value greater than data
             temp = self.__head  # create temp value
             while (temp.next_node is not None and
-                  temp.next_node.data < value): # keep searching until value < data
+                   temp.next_node.data < value):
+                # keep searching until value < data
                 temp = temp.next_node
             new.next_node = temp.next_node
             temp.next_node = new
